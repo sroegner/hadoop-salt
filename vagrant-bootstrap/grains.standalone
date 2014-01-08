@@ -1,0 +1,11 @@
+hdfs_data_disks:
+  - /data1
+
+mapred_data_disks:
+  - /data1
+
+roles:
+  - standalone
+  - hadoop_master
+  - hadoop_slave
+

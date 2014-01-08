@@ -1,0 +1,15 @@
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+*.tar.gz
+.idea
+.vagrant
+pillar
+hadoop
+accumulo
+test/jenkins/status*yaml
+target
+*iml
+configuration.yaml

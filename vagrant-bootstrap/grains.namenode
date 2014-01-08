@@ -1,0 +1,13 @@
+hdfs_data_disks:
+  - /data1
+  - /data2
+
+mapred_data_disks:
+  - /data1
+  - /data2
+
+roles:
+  - hadoop_master
+  - monitor_master
+  - monitor
+

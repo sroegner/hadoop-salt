@@ -1,0 +1,5 @@
+# to find out about other configuration options it is generally helpful to
+# lookup the pillar.example files in the individual formulas
+
+hadoop_version: hdp-1.3.0 # supported: ['apache-1.2.1', 'apache-2.2.0', 'hdp-1.3.0', 'hdp-2.2.0']
+

@@ -1,0 +1,26 @@
+# this is a basic setup to get going with salt formulas
+# there are some accumulo references in here that just happen to include content useful for hadoop
+
+log_level: info
+
+fileserver_backend:
+  - roots
+  - git
+
+file_roots:
+  base:
+    - /srv/salt
+
+gitfs_remotes:
+  - https://github.com/saltstack-formulas/ntp-formula.git
+  - https://github.com/accumulo/hostsfile-formula.git
+  - https://github.com/accumulo/accumulo-demo-formula.git
+  - https://github.com/accumulo/hadoop-formula.git
+  - https://github.com/accumulo/graphite-formula.git
+  - https://github.com/accumulo/sun-java-formula.git
+  - https://github.com/accumulo/graphite-formula.git
+  - https://github.com/accumulo/jmxtrans-formula.git
+
+ext_pillar:
+  - git: master https://github.com/accumulo/accumulo-saltstack-pillar.git
+ 

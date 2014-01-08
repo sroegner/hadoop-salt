@@ -1,0 +1,60 @@
+# two Ubuntu-based profiles for accumulo testing with saltstack
+# please note that your execution environment still has to provide
+# a provider configuration (referenced here as accumulo-integration-amazon
+
+accumulo-saltmaster-ubuntu:
+  provider: accumulo-integration-amazon
+  image: ami-b7cb91de
+  size: m1.medium
+  ssh_username: ubuntu
+  display_ssh_output: False
+  make_master: True
+  sync_after_install: all
+  grains:
+    accumulo_profile: 1GB
+    roles:
+      - hadoop_master
+    hdfs_data_disks:
+      - /media/ephemeral0
+  master:
+    user: root
+    log_level: info
+    peer:
+      .*:
+        - test.*
+        - grains.*
+    fileserver_backend:
+      - git
+    gitfs_remotes:
+      - https://github.com/accumulo/hadoop-salt.git
+      - https://github.com/accumulo/hostsfile-formula.git
+      - https://github.com/saltstack-formulas/ntp-formula.git
+      - https://github.com/accumulo/accumulo-demo-formula.git
+      - https://github.com/accumulo/hadoop-formula.git
+      - https://github.com/accumulo/sun-java-formula.git
+      - https://github.com/accumulo/graphite-formula.git
+      - https://github.com/accumulo/jmxtrans-formula.git
+    ext_pillar:
+      - git: master https://github.com/accumulo/accumulo-saltstack-pillar.git
+  block_device_mappings:
+    - DeviceName: /dev/sdb
+      VirtualName: ephemeral0
+
+accumulo-slave-ubuntu:
+  provider: accumulo-integration-amazon
+  image: ami-b7cb91de
+  size: m1.medium
+  ssh_username: ubuntu
+  display_ssh_output: False
+  make_master: False
+  sync_after_install: all
+  grains:
+    accumulo_profile: 1GB
+    roles:
+      - hadoop_slave
+    hdfs_data_disks:
+      - /media/ephemeral0
+  block_device_mappings:
+    - DeviceName: /dev/sdb
+      VirtualName: ephemeral0
+

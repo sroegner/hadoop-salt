@@ -1,0 +1,9 @@
+master: 192.169.10.111
+mine_functions:
+  network.interfaces: []
+  test.ping: []
+  grains.items: []
+  network.ip_addrs:
+    - eth1
+
+mine_interval: 2
