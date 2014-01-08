@@ -1,4 +1,4 @@
 accumulo-saltmaster-amz:
-  - accumulo-master.amz-ci.com
+  - hadoop-master.amz-ci.com
 accumulo-slave-amz:
-  - accumulo-slave01.amz-ci.com
+  - hadoop-slave01.amz-ci.com

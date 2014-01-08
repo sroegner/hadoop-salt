@@ -1,4 +1,4 @@
 accumulo-saltmaster-ubuntu:
-  - accumulo-master.ubuntu-ci.com
+  - hadoop-master.ubuntu-ci.com
 accumulo-slave-ubuntu:
-  - accumulo-slave01.ubuntu-ci.com
+  - hadoop-slave01.ubuntu-ci.com
