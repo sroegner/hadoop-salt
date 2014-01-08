@@ -94,7 +94,7 @@ echo "" >> ${TEST_PROPERTIES_FILE}
 msg "Sleep a moment ..."
 sleep 30
 msg "Checking a pillar"
-sudo ssh $SSH_OPTS ${REMOTE_USER}@${MASTER} 'sudo salt \* pillar.get mvn' 2>&1 | tee -a $LOG
+sudo ssh $SSH_OPTS ${REMOTE_USER}@${MASTER} 'sudo salt \* pillar.get hadoop' 2>&1 | tee -a $LOG
 msg "Listing cached remotes - there should be some hashes here:"
 sudo ssh $SSH_OPTS ${REMOTE_USER}@${MASTER} 'ls /var/cache/salt/master/gitfs /var/cache/salt/master/pillar*/0'
 msg "Provision the cluster now ... this will take a couple minutes"

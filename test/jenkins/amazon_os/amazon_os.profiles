@@ -20,7 +20,7 @@ accumulo-saltmaster-amz:
       pkg: yumpkg5
   master:
     user: root
-    log_level: info
+    log_level: debug
     peer:
       .*:
         - test.*
