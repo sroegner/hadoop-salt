@@ -55,11 +55,11 @@ public class HdfsAvailableTest {
         }
     }
 
-    @Test(expected=AccessControlException.class)
+    @Test
     public void testAccumuloInitialized() throws IOException {
-        // hdfs is not supposed to let me read this here
-        Path path = new Path("/accumulo/instance_id");
-        Boolean has_instance_id = fileSystem.exists(path);
+        // /tmp is supposed to exist after mapreduce was setup
+        Path path = new Path("/tmp");
+        Assert.assertTrue(fileSystem.exists(path));
     }
 
 }
