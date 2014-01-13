@@ -28,12 +28,12 @@ accumulo-saltmaster-amz:
     fileserver_backend:
       - git
     gitfs_remotes:
-      - https://github.com/accumulo/hadoop-salt.git
-      - https://github.com/accumulo/hostsfile-formula.git
       - https://github.com/saltstack-formulas/ntp-formula.git
+      - https://github.com/saltstack-formulas/hostsfile-formula.git
+      - https://github.com/saltstack-formulas/hadoop-formula.git
+      - https://github.com/saltstack-formulas/sun-java-formula.git
+      - https://github.com/accumulo/hadoop-salt.git
       - https://github.com/accumulo/accumulo-demo-formula.git
-      - https://github.com/accumulo/hadoop-formula.git
-      - https://github.com/accumulo/sun-java-formula.git
       - https://github.com/accumulo/graphite-formula.git
       - https://github.com/accumulo/jmxtrans-formula.git
     ext_pillar:
