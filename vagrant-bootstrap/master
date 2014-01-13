@@ -13,13 +13,13 @@ file_roots:
 
 gitfs_remotes:
   - https://github.com/saltstack-formulas/ntp-formula.git
-  - https://github.com/accumulo/hostsfile-formula.git
-  - https://github.com/accumulo/accumulo-demo-formula.git
-  - https://github.com/accumulo/hadoop-formula.git
+  - https://github.com/saltstack-formulas/hostsfile-formula.git
+  - https://github.com/saltstack-formulas/hadoop-formula.git
+  - https://github.com/saltstack-formulas/sun-java-formula.git
   - https://github.com/accumulo/graphite-formula.git
-  - https://github.com/accumulo/sun-java-formula.git
   - https://github.com/accumulo/graphite-formula.git
   - https://github.com/accumulo/jmxtrans-formula.git
+  - https://github.com/accumulo/accumulo-demo-formula.git
 
 ext_pillar:
   - git: master https://github.com/accumulo/accumulo-saltstack-pillar.git

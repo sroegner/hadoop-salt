@@ -17,7 +17,7 @@ Please see AWS_EXAMPLE.md for a full configuration example.
 ``Using Vagrant``
 -
 
-These are the steps to follow to a single-instance Centos 6 installation of Accumulo:
+These are the steps to follow to get a single-instance Centos 6 installation of Hadoop:
 
 1. __Preparation__: Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](http://www.vagrantup.com/downloads.html) on your computer, clone this repository
 2. __Configuration__: In the cloned project directory you'll find _configuration.yaml.example_ - you need a copy of this named configuration.yaml. Changes you make to the file will be available to the salt code. __You will need to review the file before using it!__
