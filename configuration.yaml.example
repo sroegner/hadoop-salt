@@ -2,5 +2,5 @@
 # lookup the pillar.example files in the individual formulas
 
 hadoop:
-  version: hdp-1.3.0 # supported: ['apache-1.2.1', 'apache-2.2.0', 'hdp-1.3.0', 'hdp-2.2.0']
+  version: hdp-1.3.0 # supported: ['apache-1.2.1', 'apache-2.2.0', 'hdp-1.3.0', 'hdp-2.2.0', 'cdh-4.5.0', 'cdh-4.5.0-mr1']
 
