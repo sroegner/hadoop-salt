@@ -30,8 +30,8 @@ accumulo-saltmaster-ubuntu:
       - https://github.com/saltstack-formulas/hostsfile-formula.git
       - https://github.com/saltstack-formulas/hadoop-formula.git
       - https://github.com/saltstack-formulas/sun-java-formula.git
-      - https://github.com/accumulo/graphite-formula.git
-      - https://github.com/accumulo/jmxtrans-formula.git
+      - https://github.com/saltstack-formulas/graphite-formula.git
+      - https://github.com/saltstack-formulas/jmxtrans-formula.git
       - https://github.com/accumulo/hadoop-salt.git
       - https://github.com/accumulo/accumulo-demo-formula.git
     ext_pillar:
